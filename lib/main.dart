@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nubank_clone/home/page/view/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,24 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Nubank Clone',
-      theme: ThemeData(
-        primarySwatch: Colors.purple,
-      ),
-      home: const HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar:
-          PreferredSize(preferredSize: Size.fromHeight(130), child: AppBar()),
+      home: SafeArea(child: const HomePage()),
     );
   }
 }
