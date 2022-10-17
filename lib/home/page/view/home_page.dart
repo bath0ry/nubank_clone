@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nubank_clone/products/components/account_balance.dart';
 
 import '../../../products/components/home_page_list_buttons.dart';
 import '../../../products/components/widgets_home_page_bar.dart';
@@ -39,17 +40,7 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 24),
-                    child: Text(
-                      'R\$ 1,83',
-                      style: TextStyle(fontSize: 24),
-                    ),
-                  ),
-                ],
-              ),
+              AccountBalance(),
               SizedBox(
                 height: 40,
               ),
