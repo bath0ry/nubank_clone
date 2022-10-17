@@ -170,7 +170,7 @@ class HomePage extends StatelessWidget {
               Icons.pix_outlined,
               color: Colors.black,
             ),
-            textButton: 'Área Pix',
+            textButton: 'Área Pi',
           ),
           HomePageListButtons(
             backgroundColorButton:
@@ -192,7 +192,7 @@ class HomePage extends StatelessWidget {
               Icons.pix_outlined,
               color: Colors.black,
             ),
-            textButton: 'Área Pix',
+            textButton: 'Áre Pix',
           ),
           HomePageListButtons(
             backgroundColorButton:
