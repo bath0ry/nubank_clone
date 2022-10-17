@@ -160,6 +160,7 @@ class HomePage extends StatelessWidget {
               color: Colors.black,
             ),
             textButton: 'Área Pix',
+            paddingText: EdgeInsets.all(12),
           ),
           HomePageListButtons(
             backgroundColorButton:
@@ -170,52 +171,86 @@ class HomePage extends StatelessWidget {
               Icons.pix_outlined,
               color: Colors.black,
             ),
-            textButton: 'Área Pi',
+            textButton: 'Pagar',
+            paddingText: EdgeInsets.all(12),
           ),
           HomePageListButtons(
-            backgroundColorButton:
-                MaterialStateProperty.all(Color.fromARGB(255, 222, 221, 221)),
-            paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
-            shapeButton: MaterialStateProperty.all(CircleBorder()),
-            iconButton: Icon(
-              Icons.pix_outlined,
-              color: Colors.black,
-            ),
-            textButton: 'Área Pix',
-          ),
+              backgroundColorButton:
+                  MaterialStateProperty.all(Color.fromARGB(255, 222, 221, 221)),
+              paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
+              shapeButton: MaterialStateProperty.all(CircleBorder()),
+              iconButton: Icon(
+                Icons.pix_outlined,
+                color: Colors.black,
+              ),
+              textButton: 'Transferir',
+              paddingText: EdgeInsets.all(12)),
           HomePageListButtons(
-            backgroundColorButton:
-                MaterialStateProperty.all(Color.fromARGB(255, 222, 221, 221)),
-            paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
-            shapeButton: MaterialStateProperty.all(CircleBorder()),
-            iconButton: Icon(
-              Icons.pix_outlined,
-              color: Colors.black,
-            ),
-            textButton: 'Áre Pix',
-          ),
+              backgroundColorButton:
+                  MaterialStateProperty.all(Color.fromARGB(255, 222, 221, 221)),
+              paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
+              shapeButton: MaterialStateProperty.all(CircleBorder()),
+              iconButton: Icon(
+                Icons.pix_outlined,
+                color: Colors.black,
+              ),
+              textButton: 'Depositar',
+              paddingText: EdgeInsets.all(12)),
           HomePageListButtons(
-            backgroundColorButton:
-                MaterialStateProperty.all(Color.fromARGB(255, 222, 221, 221)),
-            paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
-            shapeButton: MaterialStateProperty.all(CircleBorder()),
-            iconButton: Icon(
-              Icons.pix_outlined,
-              color: Colors.black,
-            ),
-            textButton: 'Área Pix',
-          ),
+              backgroundColorButton:
+                  MaterialStateProperty.all(Color.fromARGB(255, 222, 221, 221)),
+              paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
+              shapeButton: MaterialStateProperty.all(CircleBorder()),
+              iconButton: Icon(
+                Icons.pix_outlined,
+                color: Colors.black,
+              ),
+              textButton: 'Recarga de \nCelular',
+              paddingText: EdgeInsets.all(5)),
           HomePageListButtons(
-            backgroundColorButton:
-                MaterialStateProperty.all(Color.fromARGB(255, 222, 221, 221)),
-            paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
-            shapeButton: MaterialStateProperty.all(CircleBorder()),
-            iconButton: Icon(
-              Icons.pix_outlined,
-              color: Colors.black,
-            ),
-            textButton: 'Área Pix',
-          ),
+              backgroundColorButton:
+                  MaterialStateProperty.all(Color.fromARGB(255, 222, 221, 221)),
+              paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
+              shapeButton: MaterialStateProperty.all(CircleBorder()),
+              iconButton: Icon(
+                Icons.pix_outlined,
+                color: Colors.black,
+              ),
+              textButton: 'Cobrar',
+              paddingText: EdgeInsets.all(12)),
+          HomePageListButtons(
+              backgroundColorButton:
+                  MaterialStateProperty.all(Color.fromARGB(255, 222, 221, 221)),
+              paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
+              shapeButton: MaterialStateProperty.all(CircleBorder()),
+              iconButton: Icon(
+                Icons.pix_outlined,
+                color: Colors.black,
+              ),
+              textButton: 'Doação',
+              paddingText: EdgeInsets.all(12)),
+          HomePageListButtons(
+              backgroundColorButton:
+                  MaterialStateProperty.all(Color.fromARGB(255, 222, 221, 221)),
+              paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
+              shapeButton: MaterialStateProperty.all(CircleBorder()),
+              iconButton: Icon(
+                Icons.pix_outlined,
+                color: Colors.black,
+              ),
+              textButton: 'Transferir \nInternac.',
+              paddingText: EdgeInsets.all(5)),
+          HomePageListButtons(
+              backgroundColorButton:
+                  MaterialStateProperty.all(Color.fromARGB(255, 222, 221, 221)),
+              paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
+              shapeButton: MaterialStateProperty.all(CircleBorder()),
+              iconButton: Icon(
+                Icons.pix_outlined,
+                color: Colors.black,
+              ),
+              textButton: 'Investir',
+              paddingText: EdgeInsets.all(12)),
         ],
       ),
     );

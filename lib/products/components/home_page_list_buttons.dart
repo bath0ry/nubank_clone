@@ -6,6 +6,7 @@ class HomePageListButtons extends StatelessWidget {
   final MaterialStateProperty<EdgeInsetsGeometry> paddingButton;
   final Icon iconButton;
   final String textButton;
+  final EdgeInsetsGeometry paddingText;
   const HomePageListButtons({
     Key? key,
     required this.backgroundColorButton,
@@ -13,6 +14,7 @@ class HomePageListButtons extends StatelessWidget {
     required this.paddingButton,
     required this.iconButton,
     required this.textButton,
+    required this.paddingText,
   }) : super(key: key);
 
   @override
@@ -29,7 +31,7 @@ class HomePageListButtons extends StatelessWidget {
           child: iconButton,
         ),
         Padding(
-          padding: const EdgeInsets.all(15.0),
+          padding: paddingText,
           child: Text(
             '$textButton',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
