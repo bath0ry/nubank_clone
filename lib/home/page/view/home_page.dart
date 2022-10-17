@@ -159,7 +159,7 @@ class HomePage extends StatelessWidget {
             paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
             shapeButton: MaterialStateProperty.all(CircleBorder()),
             iconButton: Icon(
-              Icons.pix_outlined,
+              Icons.payment,
               color: Colors.black,
             ),
             textButton: 'Pagar',
@@ -171,7 +171,7 @@ class HomePage extends StatelessWidget {
               paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
               shapeButton: MaterialStateProperty.all(CircleBorder()),
               iconButton: Icon(
-                Icons.pix_outlined,
+                Icons.attach_money,
                 color: Colors.black,
               ),
               textButton: 'Transferir',
@@ -182,7 +182,7 @@ class HomePage extends StatelessWidget {
               paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
               shapeButton: MaterialStateProperty.all(CircleBorder()),
               iconButton: Icon(
-                Icons.pix_outlined,
+                Icons.savings,
                 color: Colors.black,
               ),
               textButton: 'Depositar',
@@ -193,7 +193,7 @@ class HomePage extends StatelessWidget {
               paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
               shapeButton: MaterialStateProperty.all(CircleBorder()),
               iconButton: Icon(
-                Icons.pix_outlined,
+                Icons.phone_android,
                 color: Colors.black,
               ),
               textButton: 'Recarga de \nCelular',
@@ -204,7 +204,7 @@ class HomePage extends StatelessWidget {
               paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
               shapeButton: MaterialStateProperty.all(CircleBorder()),
               iconButton: Icon(
-                Icons.pix_outlined,
+                Icons.request_quote,
                 color: Colors.black,
               ),
               textButton: 'Cobrar',
@@ -215,7 +215,7 @@ class HomePage extends StatelessWidget {
               paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
               shapeButton: MaterialStateProperty.all(CircleBorder()),
               iconButton: Icon(
-                Icons.pix_outlined,
+                Icons.favorite_border,
                 color: Colors.black,
               ),
               textButton: 'Doação',
@@ -226,7 +226,7 @@ class HomePage extends StatelessWidget {
               paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
               shapeButton: MaterialStateProperty.all(CircleBorder()),
               iconButton: Icon(
-                Icons.pix_outlined,
+                Icons.language,
                 color: Colors.black,
               ),
               textButton: 'Transferir \nInternac.',
@@ -237,7 +237,7 @@ class HomePage extends StatelessWidget {
               paddingButton: MaterialStateProperty.all(EdgeInsets.all(22)),
               shapeButton: MaterialStateProperty.all(CircleBorder()),
               iconButton: Icon(
-                Icons.pix_outlined,
+                Icons.signal_cellular_alt,
                 color: Colors.black,
               ),
               textButton: 'Investir',
