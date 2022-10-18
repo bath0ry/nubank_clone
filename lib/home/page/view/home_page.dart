@@ -140,6 +140,69 @@ class HomePage extends StatelessWidget {
                 indent: 5,
                 endIndent: 5,
               ),
+              Padding(
+                padding: const EdgeInsets.only(left: 23),
+                child: Row(children: [
+                  Text(
+                    'Acompanhe também',
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
+                  ),
+                  SizedBox(
+                    width: 130,
+                  ),
+                ]),
+              ),
+              FittedBox(
+                child: Padding(
+                  padding: const EdgeInsets.all(26),
+                  child: Container(
+                    width: 360,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Color.fromARGB(255, 219, 218, 218)),
+                    child: Padding(
+                      padding: const EdgeInsets.only(right: 35),
+                      child: TextButton.icon(
+                        style: ButtonStyle(
+                            foregroundColor:
+                                MaterialStateProperty.all(Colors.black),
+                            textStyle: MaterialStateProperty.all(TextStyle(
+                                fontSize: 21, fontWeight: FontWeight.w500))),
+                        label: Text(
+                          'Assistente de pagamentos',
+                        ),
+                        onPressed: () {},
+                        icon: IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.currency_exchange,
+                            size: 23,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Divider(
+                height: 50,
+                color: Color.fromARGB(255, 216, 216, 216),
+                thickness: 2,
+                indent: 5,
+                endIndent: 5,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 23),
+                child: Row(
+                  children: [
+                    Text('Descubra mais',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w600,
+                            color: Color.fromARGB(255, 145, 144, 144))),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
