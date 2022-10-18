@@ -130,9 +130,16 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 30,
+                height: 20,
               ),
               CurrentInvoice(),
+              Divider(
+                height: 50,
+                color: Color.fromARGB(255, 216, 216, 216),
+                thickness: 2,
+                indent: 5,
+                endIndent: 5,
+              ),
             ],
           ),
         ),

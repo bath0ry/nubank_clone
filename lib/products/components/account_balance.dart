@@ -13,7 +13,7 @@ class AccountBalance extends StatelessWidget {
           padding: const EdgeInsets.only(left: 24),
           child: Text(
             'R\$ 1,83',
-            style: TextStyle(fontSize: 24),
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
           ),
         ),
       ],
