@@ -193,15 +193,15 @@ class HomePage extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 23),
-                child: Row(
-                  children: [
-                    Text('Descubra mais',
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w600,
-                            color: Color.fromARGB(255, 145, 144, 144))),
-                  ],
-                ),
+                child: Row(children: [
+                  Text(
+                    'Descubra mais',
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
+                  ),
+                  SizedBox(
+                    width: 130,
+                  ),
+                ]),
               ),
             ],
           ),
