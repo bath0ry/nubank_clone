@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nubank_clone/products/components/account_balance.dart';
+import 'package:nubank_clone/products/components/current_invoice_widget.dart';
 
 import '../../../products/components/home_page_list_buttons.dart';
 import '../../../products/components/widgets_home_page_bar.dart';
@@ -128,6 +129,10 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
+              SizedBox(
+                height: 30,
+              ),
+              CurrentInvoice(),
             ],
           ),
         ),
