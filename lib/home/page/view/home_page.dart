@@ -203,6 +203,15 @@ class HomePage extends StatelessWidget {
                   ),
                 ]),
               ),
+              SizedBox(
+                width: 200,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+
+                  ],
+                ),
+              )
             ],
           ),
         ),
