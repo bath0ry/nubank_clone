@@ -30,7 +30,7 @@ class HomePageBarWidgets extends StatelessWidget {
                   alignment: Alignment.topLeft,
                 ),
                 SizedBox(
-                  width: 185,
+                  width: 300,
                 ),
                 IconButton(
                     onPressed: () {},

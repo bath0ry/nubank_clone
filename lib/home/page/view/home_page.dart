@@ -6,7 +6,7 @@ import '../../../products/components/home_page_list_buttons.dart';
 import '../../../products/components/widgets_home_page_bar.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({
+  HomePage({
     Key? key,
   }) : super(key: key);
 
@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      width: 250,
+                      width: 400,
                     ),
                     IconButton(
                         onPressed: () {}, icon: Icon(Icons.chevron_right))
@@ -191,27 +191,6 @@ class HomePage extends StatelessWidget {
                 indent: 5,
                 endIndent: 5,
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 23),
-                child: Row(children: [
-                  Text(
-                    'Descubra mais',
-                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
-                  ),
-                  SizedBox(
-                    width: 130,
-                  ),
-                ]),
-              ),
-              SizedBox(
-                width: 200,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: [
-
-                  ],
-                ),
-              )
             ],
           ),
         ),
@@ -223,6 +202,7 @@ class HomePage extends StatelessWidget {
     return SizedBox(
       height: 120,
       child: ListView(
+        shrinkWrap: true,
         scrollDirection: Axis.horizontal,
         children: [
           HomePageListButtons(
