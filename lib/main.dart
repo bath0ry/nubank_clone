@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:nubank_clone/data/view_balance.dart';
+import 'package:nubank_clone/data/view_balance_cubit.dart';
 import 'package:nubank_clone/home/page/view/home_page.dart';
 
 void main() {
