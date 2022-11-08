@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:nubank_clone/data/view_balance.dart';
 
 class HomePageBarWidgets extends StatelessWidget {
   const HomePageBarWidgets({
@@ -32,12 +34,16 @@ class HomePageBarWidgets extends StatelessWidget {
                 SizedBox(
                   width: 300,
                 ),
-                IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.visibility,
-                      color: Colors.white,
-                    )),
+                BlocBuilder(builder: (context, state) {
+                  return IconButton(
+                      onPressed: () {
+                        context.read<ViewCubit>().switchIcon();
+                      },
+                      icon: Icon(
+                        Icons.visibility,
+                        color: Colors.white,
+                      ));
+                }),
                 IconButton(
                     onPressed: () {},
                     icon: Icon(

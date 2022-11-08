@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:nubank_clone/data/view_balance.dart';
 import 'package:nubank_clone/home/page/view/home_page.dart';
 
 void main() {
@@ -14,7 +16,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Nubank Clone',
-      home: HomePage(),
+      home: BlocProvider<ViewCubit>(
+        create: (BuildContext context) => ViewCubit(),
+        child: HomePage(),
+      ),
     );
   }
 }
