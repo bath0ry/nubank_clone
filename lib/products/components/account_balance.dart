@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nubank_clone/data/balance_text_cubit.dart';
+import 'package:nubank_clone/products/components/text.dart';
 
 class AccountBalance extends StatelessWidget {
   const AccountBalance({
@@ -12,8 +14,8 @@ class AccountBalance extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(left: 24),
           child: Text(
-            'R\$ 1,83',
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
+            text,
+            style: TextStyle(fontSize: 25),
           ),
         ),
       ],
