@@ -1,17 +1,36 @@
 import 'package:flutter/material.dart';
-import 'package:nubank_clone/data/balance_text_cubit.dart';
-import 'package:nubank_clone/products/components/account_balance.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:nubank_clone/products/components/current_invoice_widget.dart';
 
 import '../../../products/components/home_page_list_buttons.dart';
-import '../../../products/components/widgets_home_page_bar.dart';
 
-class HomePage extends StatelessWidget {
-  bool showBalance = true;
-
+class HomePage extends StatefulWidget {
   HomePage({
     Key? key,
   }) : super(key: key);
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  bool showBalance = true;
+  bool iconButton = true;
+  IconData iconVisibility = Icons.visibility_off;
+
+  String text = 'R\$ 1,80';
+
+  void changeBalance() {}
+  void visiblity() {
+    setState(() {
+      if (iconButton == true) {
+        iconVisibility;
+      } else {
+        Icons.visibility;
+      }
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +39,75 @@ class HomePage extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              HomePageBarWidgets(),
+              Container(
+                color: Color(0xff830ad1),
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.person_outline,
+                              size: 30,
+                              color: Colors.white,
+                            ),
+                            alignment: Alignment.topLeft,
+                          ),
+                          SizedBox(
+                            width: 180,
+                          ),
+                          IconButton(
+                              onPressed: () {
+                                setState(() {
+                                  visiblity();
+                                });
+                              },
+                              icon: Icon(
+                                iconVisibility,
+                                color: Colors.white,
+                              )),
+                          IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.help_outline,
+                                color: Colors.white,
+                              )),
+                          IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.person_add_alt,
+                                color: Colors.white,
+                              )),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 30,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          left: 10,
+                        ),
+                        child: Text(
+                          'Olá, Paulo',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 24,
+                              fontWeight: FontWeight.w500),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      )
+                    ],
+                  ),
+                ),
+              ),
               SizedBox(
                 height: 25,
               ),
@@ -44,7 +131,17 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
-              AccountBalance(),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 24),
+                    child: Text(
+                      text,
+                      style: TextStyle(fontSize: 25),
+                    ),
+                  ),
+                ],
+              ),
               SizedBox(
                 height: 40,
               ),
@@ -56,7 +153,7 @@ class HomePage extends StatelessWidget {
                 children: [
                   FittedBox(
                     child: Padding(
-                      padding: const EdgeInsets.all(26),
+                      padding: const EdgeInsets.all(20),
                       child: Container(
                         width: 350,
                         decoration: BoxDecoration(
