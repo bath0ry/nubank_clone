@@ -4,13 +4,9 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Aplicativo clone do Nubank, com intuito de clonar a home page.
 
-A few resources to get you started if this is your first Flutter project:
+O aplicativo foi montado para clonar a home page do nubank apenas para praticar construção de tela.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![image](https://user-images.githubusercontent.com/110061019/212271544-52854256-ea7a-4567-a817-b08539262b16.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
